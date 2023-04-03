@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  YourGolf
+
+  Created by vfa on 2/7/23.
+  
+*/
+
+// Apple watch input score
+"input_score_detail_input_header" = "Detail input";
+"input_score_water_header" = "WATER";
+"input_score_guard_bunker_header" = "GUARD BUNKER";
+"input_score_back_button_title" = "Back to score list";
+"input_score_list_save_title" = "Save temporarily";
+"input_score_list_upload_title" = "Upload and close";
+"input_score_list_save_success" = "Complete saving data to GN+ app.";
+"input_score_list_save_fail" = "Failed to save due to poor connection. Please try again in a better connection.";
+// Apple watch top
+"top_title" = "iPhoneでGN＋アプリと連携してください";
