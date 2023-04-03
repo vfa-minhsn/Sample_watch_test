@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jun501Pro-Bold.otf">
+            <string>Jun501Pro-Bold</string>
+        </array>
+        <array key="ShinMGoPro-DeBold.otf">
+            <string>ShinMGoPro-DeBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--InputScore-->
+        <scene sceneID="fRD-1l-P1O">
+            <objects>
+                <controller identifier="InputScoreInterface" title="InputScore" id="IGi-cB-aGO" customClass="InputScoreInterfaceController" customModule="CoinFlip_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" spacing="0.0" id="uLe-Ik-khe">
+                            <items>
+                                <button alignment="left" verticalAlignment="center" id="wCs-Ym-IfD">
+                                    <group key="contentGroup" width="0.32000000000000001" alignment="left" contentMode="scaleAspectFit" radius="0.0" id="VC8-K2-PzW">
+                                        <items>
+                                            <imageView width="1" alignment="left" image="input_score_previous_hole" contentMode="scaleAspectFit" id="QNJ-Q9-G0T"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="previousButtonPressed" destination="IGi-cB-aGO" id="sr0-uK-Xwd"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="1H" textAlignment="center" id="LIG-Wm-59o">
+                                    <color key="textColor" red="0.058823529409999999" green="0.73725490199999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="22"/>
+                                </label>
+                                <button alignment="right" verticalAlignment="center" id="sX6-Iw-xjG">
+                                    <group key="contentGroup" width="0.32000000000000001" alignment="left" radius="0.0" id="2Sk-ZQ-g7M">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="input_score_next_hole" contentMode="scaleAspectFit" id="N2R-pM-aaS"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="nextButtonPressed" destination="IGi-cB-aGO" id="KLs-YE-Xph"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="gnM-z3-0Tc">
+                            <items>
+                                <label width="1" alignment="center" text="STROKE" textAlignment="center" id="RmJ-pG-wZy">
+                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="16"/>
+                                </label>
+                                <group width="0.84999999999999998" alignment="center" id="gsO-eh-QYo">
+                                    <items>
+                                        <group width="0.25" alignment="left" layout="overlap" id="xUU-eM-X46" userLabel="Minus">
+                                            <items>
+                                                <imageView alignment="center" verticalAlignment="center" image="input_score_plus_minus_bg" contentMode="scaleAspectFit" id="3bP-6h-7cV"/>
+                                                <imageView width="0.29999999999999999" alignment="center" verticalAlignment="center" image="input_score_minus" contentMode="scaleAspectFit" id="7ee-ee-p0F">
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button width="1" alignment="center" verticalAlignment="center" id="Cmz-Vo-CXs">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="strokeMinusPressed" destination="IGi-cB-aGO" id="wn3-AK-OXd"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="POF-h6-JT9">
+                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="35"/>
+                                        </label>
+                                        <group width="0.25" alignment="right" layout="overlap" id="GhF-VD-4jM" userLabel="Plus">
+                                            <items>
+                                                <imageView alignment="center" verticalAlignment="center" image="input_score_plus_minus_bg" contentMode="scaleAspectFit" id="kCO-fJ-4Mg"/>
+                                                <imageView width="0.46999999999999997" alignment="center" verticalAlignment="center" image="input_score_plus" contentMode="scaleAspectFit" id="y4w-AY-8zy">
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button width="1" alignment="left" id="lrs-oR-HeZ">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="strokePlusPressed" destination="IGi-cB-aGO" id="0nt-nY-Whc"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                                <label alignment="center" text="PUTT" textAlignment="center" id="Zxa-AZ-he9">
+                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="16"/>
+                                </label>
+                                <group width="0.84999999999999998" alignment="center" id="1AZ-9f-3N1">
+                                    <items>
+                                        <group width="0.25" alignment="left" layout="overlap" id="9hm-Si-mQ0" userLabel="Minus">
+                                            <items>
+                                                <imageView alignment="center" verticalAlignment="center" image="input_score_plus_minus_bg" id="ssk-KE-QlL"/>
+                                                <imageView width="0.29999999999999999" alignment="center" verticalAlignment="center" image="input_score_minus" contentMode="scaleAspectFit" id="m4k-9d-XlU"/>
+                                                <button width="1" alignment="center" verticalAlignment="center" id="Ip0-bg-LEn">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="puttMinusPressed" destination="IGi-cB-aGO" id="6or-eY-HCM"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <label alignment="center" verticalAlignment="center" text="0" id="aIS-ck-nzU">
+                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="35"/>
+                                        </label>
+                                        <group width="0.25" alignment="right" layout="overlap" id="R91-k0-0Wz" userLabel="Plus">
+                                            <items>
+                                                <imageView alignment="center" verticalAlignment="center" image="input_score_plus_minus_bg" id="rgF-Vv-pPO"/>
+                                                <imageView width="0.46999999999999997" alignment="center" verticalAlignment="center" image="input_score_plus" contentMode="scaleAspectFit" id="s2H-LT-b1p"/>
+                                                <button width="1" alignment="center" verticalAlignment="center" id="Gzs-aO-qMo">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="puttPlusPressed" destination="IGi-cB-aGO" id="fMy-yl-eKn"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="15" bottom="15"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="4jW-Je-SfQ">
+                            <items>
+                                <group width="0.98999999999999999" alignment="center" radius="10" id="dyE-O4-U5k" userLabel="DetailInput">
+                                    <items>
+                                        <imageView width="0.13" alignment="left" verticalAlignment="center" image="input_score_detail_input_icon" contentMode="scaleAspectFit" id="7hj-aP-NvI"/>
+                                        <label alignment="left" verticalAlignment="center" text="Detail input" id="pe4-cE-Mhs">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <group width="0.080000000000000002" alignment="right" verticalAlignment="center" layout="overlap" id="62y-jn-6Fb">
+                                            <items>
+                                                <imageView width="1" alignment="right" verticalAlignment="center" image="input_score_plus" contentMode="scaleAspectFit" id="FfS-ye-JNe"/>
+                                                <button width="1" alignment="left" id="zsn-rr-UsJ">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="closeOpenDetailPressed" destination="IGi-cB-aGO" id="ksM-eL-6gO"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" spacing="8" id="6Is-CI-J09">
+                                    <items>
+                                        <label width="1" alignment="center" text="OB" textAlignment="center" id="BaQ-Zm-ju5">
+                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="16"/>
+                                        </label>
+                                        <group width="0.84999999999999998" alignment="center" id="zEt-YZ-zTR">
+                                            <items>
+                                                <group width="0.25" alignment="left" layout="overlap" id="FnX-1m-1X2" userLabel="Minus">
+                                                    <items>
+                                                        <imageView alignment="center" verticalAlignment="center" image="input_score_detail_minus_plus_bg" contentMode="scaleAspectFit" id="dmr-su-U68"/>
+                                                        <imageView width="0.29999999999999999" alignment="center" verticalAlignment="center" image="input_score_minus" contentMode="scaleAspectFit" id="aKt-KJ-jHh">
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <button width="1" alignment="center" verticalAlignment="center" id="miU-J8-jIx">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <connections>
+                                                                <action selector="obMinusPressed" destination="IGi-cB-aGO" id="v8g-Eh-Yhv"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="eMA-KT-5ne">
+                                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="35"/>
+                                                </label>
+                                                <group width="0.25" alignment="right" layout="overlap" id="1jH-h0-aOQ" userLabel="Plus">
+                                                    <items>
+                                                        <imageView alignment="center" verticalAlignment="center" image="input_score_detail_minus_plus_bg" contentMode="scaleAspectFit" id="3Yb-qt-ils"/>
+                                                        <imageView width="0.46999999999999997" alignment="center" verticalAlignment="center" image="input_score_plus" contentMode="scaleAspectFit" id="pCh-XF-Q4x">
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <button width="1" alignment="center" verticalAlignment="center" id="DHn-Eh-yd6">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <connections>
+                                                                <action selector="obPlusPressed" destination="IGi-cB-aGO" id="QFU-Db-jhC"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </group>
+                                        <label alignment="center" text="WATER" textAlignment="center" id="cR1-fP-ziv">
+                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="10"/>
+                                        </label>
+                                        <group width="0.84999999999999998" alignment="center" id="wTO-nu-7PV">
+                                            <items>
+                                                <group width="0.25" alignment="left" layout="overlap" id="RM0-dq-5pi" userLabel="Minus">
+                                                    <items>
+                                                        <imageView alignment="center" verticalAlignment="center" image="input_score_detail_minus_plus_bg" id="Vrx-Z5-96f"/>
+                                                        <imageView width="0.29999999999999999" alignment="center" verticalAlignment="center" image="input_score_minus" contentMode="scaleAspectFit" id="ClX-Pk-wik"/>
+                                                        <button width="1" alignment="center" verticalAlignment="center" id="Hzt-Cv-AR1">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <connections>
+                                                                <action selector="waterMinusPressed" destination="IGi-cB-aGO" id="bkK-YF-DNM"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <label alignment="center" verticalAlignment="center" text="0" id="YxP-Y1-BRY">
+                                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="35"/>
+                                                </label>
+                                                <group width="0.25" alignment="right" layout="overlap" id="ZWG-Tw-vVA" userLabel="Plus">
+                                                    <items>
+                                                        <imageView alignment="center" verticalAlignment="center" image="input_score_detail_minus_plus_bg" id="Y4O-v9-o4r"/>
+                                                        <imageView width="0.46999999999999997" alignment="center" verticalAlignment="center" image="input_score_plus" contentMode="scaleAspectFit" id="eRL-od-vW7"/>
+                                                        <button width="1" alignment="left" id="t3j-sd-ww6">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <connections>
+                                                                <action selector="waterPlusPressed" destination="IGi-cB-aGO" id="sLx-8H-FXW"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <label alignment="center" text="GUARD BUNKER" textAlignment="center" id="12l-oa-CIH">
+                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="10"/>
+                                        </label>
+                                        <group width="0.84999999999999998" alignment="center" spacing="0.0" id="CHM-GL-nXH">
+                                            <items>
+                                                <button alignment="left" verticalAlignment="center" id="J2H-B9-fwW">
+                                                    <group key="contentGroup" width="0.34999999999999998" alignment="left" layout="overlap" radius="0.0" id="UhN-Zt-ENT">
+                                                        <items>
+                                                            <imageView alignment="left" image="input_score_detail_on_bg" id="EMk-iy-NR2"/>
+                                                            <label alignment="center" verticalAlignment="center" text="ON" id="51i-gR-gbQ">
+                                                                <fontDescription key="font" name="Jun501Pro-Bold" family="A-OTF Jun Pro" pointSize="15"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <action selector="guardBunkerOnPressed" destination="IGi-cB-aGO" id="hia-fl-ES0"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView width="0.13" alignment="center" verticalAlignment="center" image="input_score_detail_on" contentMode="scaleAspectFit" id="uu8-d9-ldO"/>
+                                                <button alignment="right" verticalAlignment="center" id="URg-7h-Nh8">
+                                                    <group key="contentGroup" width="0.34999999999999998" alignment="left" layout="overlap" radius="0.0" id="K4g-zH-HOD">
+                                                        <items>
+                                                            <imageView alignment="left" image="input_score_detail_off_bg" id="0Jw-xT-cT1"/>
+                                                            <label alignment="center" verticalAlignment="center" text="OFF" id="i8b-hT-oSG">
+                                                                <fontDescription key="font" name="Jun501Pro-Bold" family="A-OTF Jun Pro" pointSize="15"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <action selector="guardBunkerOffPressed" destination="IGi-cB-aGO" id="8PQ-jq-3kf"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="15"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.1472066045" green="0.37030112739999999" blue="0.32699388270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <button width="1" alignment="left" title="Back to score list" id="0x0-pz-LIY">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="backButtonPressed" destination="IGi-cB-aGO" id="Ak9-K7-jNN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="backButton" destination="0x0-pz-LIY" id="Fzy-bN-ddR"/>
+                        <outlet property="closeOpenDetailImage" destination="FfS-ye-JNe" id="fvP-ba-sPD"/>
+                        <outlet property="detailInputGroup" destination="6Is-CI-J09" id="iNj-Rk-nNa"/>
+                        <outlet property="detailInputHeaderLabel" destination="pe4-cE-Mhs" id="h1M-5r-8ji"/>
+                        <outlet property="guardBunkerHeaderLabel" destination="12l-oa-CIH" id="Cmf-PM-Irr"/>
+                        <outlet property="guardBunkerImage" destination="uu8-d9-ldO" id="Mia-Lh-ggP"/>
+                        <outlet property="holeNumLabel" destination="LIG-Wm-59o" id="bVa-aR-NYR"/>
+                        <outlet property="obHeaderLabel" destination="BaQ-Zm-ju5" id="JgD-WO-JMx"/>
+                        <outlet property="obValueLabel" destination="eMA-KT-5ne" id="GyY-Iu-kct"/>
+                        <outlet property="pushHeaderLabel" destination="Zxa-AZ-he9" id="6YW-ay-kOC"/>
+                        <outlet property="pushValueLabel" destination="aIS-ck-nzU" id="wzG-y9-aeA"/>
+                        <outlet property="strokeHeaderLabel" destination="RmJ-pG-wZy" id="r7K-xo-ZCp"/>
+                        <outlet property="strokeValueLabel" destination="POF-h6-JT9" id="gnI-zW-Ma7"/>
+                        <outlet property="waterHeaderLabel" destination="cR1-fP-ziv" id="cV7-bV-2Rz"/>
+                        <outlet property="waterValueLabel" destination="YxP-Y1-BRY" id="IyB-3M-qgh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-57" y="-25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="input_score_detail_input_icon" width="47" height="41"/>
+        <image name="input_score_detail_minus_plus_bg" width="70" height="70"/>
+        <image name="input_score_detail_off_bg" width="101" height="70"/>
+        <image name="input_score_detail_on" width="46" height="33"/>
+        <image name="input_score_detail_on_bg" width="100" height="70"/>
+        <image name="input_score_minus" width="22" height="5"/>
+        <image name="input_score_next_hole" width="123" height="43"/>
+        <image name="input_score_plus" width="33" height="35"/>
+        <image name="input_score_plus_minus_bg" width="72" height="74"/>
+        <image name="input_score_previous_hole" width="123" height="43"/>
+    </resources>
+</document>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IGi-cB-aGO">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--TopInterfaceController-->
+        <scene sceneID="fRD-1l-P1O">
+            <objects>
+                <controller identifier="TopInterfaceController" id="IGi-cB-aGO" customClass="TopInterfaceController" customModule="CoinFlip_WatchKit_Extension">
+                    <items>
+                        <group width="0.80000000000000004" alignment="center" verticalAlignment="center" layout="vertical" id="ceB-GV-9rF">
+                            <items>
+                                <imageView width="0.5" alignment="center" image="top_watch_app_logo" contentMode="scaleAspectFit" id="eM0-bb-Iwg"/>
+                                <label alignment="center" text="iPhoneでGN＋アプリと連携してください" numberOfLines="0" id="FRQ-1E-evg"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="91" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="top_watch_app_logo" width="135" height="85"/>
+    </resources>
+</document>

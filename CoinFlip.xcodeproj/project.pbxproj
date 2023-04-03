@@ -50,6 +50,14 @@
 		B5FFC0E529DAB2F800FBDADF /* input_score_next_hole.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F049CA29DAB06C0000C479 /* input_score_next_hole.png */; };
 		B5FFC0E629DAB2FA00FBDADF /* input_score_detail_on_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F049CB29DAB06C0000C479 /* input_score_detail_on_bg.png */; };
 		B5FFC0E729DAB2FD00FBDADF /* input_score_detail_off.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F049CC29DAB06C0000C479 /* input_score_detail_off.png */; };
+		B5FFC0EC29DAB90E00FBDADF /* InputScoreInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0E929DAB90E00FBDADF /* InputScoreInterface.storyboard */; };
+		B5FFC0ED29DAB90E00FBDADF /* InputScoreListHoleInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0EA29DAB90E00FBDADF /* InputScoreListHoleInterface.storyboard */; };
+		B5FFC0EE29DAB90E00FBDADF /* TopInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0EB29DAB90E00FBDADF /* TopInterface.storyboard */; };
+		B5FFC0F529DABA9300FBDADF /* Certificates_Dev.p12 in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0F029DABA9300FBDADF /* Certificates_Dev.p12 */; };
+		B5FFC0F629DABA9300FBDADF /* VFA_Test.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0F129DABA9300FBDADF /* VFA_Test.mobileprovision */; };
+		B5FFC0F729DABA9300FBDADF /* VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0F229DABA9300FBDADF /* VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision */; };
+		B5FFC0F829DABA9300FBDADF /* VFA_Test_WatchkitApp.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0F329DABA9300FBDADF /* VFA_Test_WatchkitApp.mobileprovision */; };
+		B5FFC0F929DABA9300FBDADF /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B5FFC0F429DABA9300FBDADF /* README.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +140,14 @@
 		B5F049CF29DAB06C0000C479 /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
 		B5F049D229DAB06C0000C479 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5F049D329DAB06C0000C479 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B5FFC0E929DAB90E00FBDADF /* InputScoreInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputScoreInterface.storyboard; sourceTree = "<group>"; };
+		B5FFC0EA29DAB90E00FBDADF /* InputScoreListHoleInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputScoreListHoleInterface.storyboard; sourceTree = "<group>"; };
+		B5FFC0EB29DAB90E00FBDADF /* TopInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopInterface.storyboard; sourceTree = "<group>"; };
+		B5FFC0F029DABA9300FBDADF /* Certificates_Dev.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates_Dev.p12; sourceTree = "<group>"; };
+		B5FFC0F129DABA9300FBDADF /* VFA_Test.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = VFA_Test.mobileprovision; sourceTree = "<group>"; };
+		B5FFC0F229DABA9300FBDADF /* VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision; sourceTree = "<group>"; };
+		B5FFC0F329DABA9300FBDADF /* VFA_Test_WatchkitApp.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = VFA_Test_WatchkitApp.mobileprovision; sourceTree = "<group>"; };
+		B5FFC0F429DABA9300FBDADF /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +171,7 @@
 		7327FCAB22886ABE0050D1A0 = {
 			isa = PBXGroup;
 			children = (
+				B5FFC0EF29DABA9300FBDADF /* VFA_Test_Watch */,
 				7327FCB622886ABE0050D1A0 /* CoinFlip */,
 				7327FCCA22886AC60050D1A0 /* CoinFlip WatchKit App */,
 				7327FCD922886AC80050D1A0 /* CoinFlip WatchKit Extension */,
@@ -187,6 +204,7 @@
 		7327FCCA22886AC60050D1A0 /* CoinFlip WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				B5FFC0E829DAB90E00FBDADF /* Interface */,
 				7327FCCE22886AC80050D1A0 /* Assets.xcassets */,
 				7327FCD022886AC80050D1A0 /* Info.plist */,
 				B5F0499F29DA93960000C479 /* Storyboard.storyboard */,
@@ -306,6 +324,28 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		B5FFC0E829DAB90E00FBDADF /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B5FFC0E929DAB90E00FBDADF /* InputScoreInterface.storyboard */,
+				B5FFC0EA29DAB90E00FBDADF /* InputScoreListHoleInterface.storyboard */,
+				B5FFC0EB29DAB90E00FBDADF /* TopInterface.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		B5FFC0EF29DABA9300FBDADF /* VFA_Test_Watch */ = {
+			isa = PBXGroup;
+			children = (
+				B5FFC0F029DABA9300FBDADF /* Certificates_Dev.p12 */,
+				B5FFC0F129DABA9300FBDADF /* VFA_Test.mobileprovision */,
+				B5FFC0F229DABA9300FBDADF /* VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision */,
+				B5FFC0F329DABA9300FBDADF /* VFA_Test_WatchkitApp.mobileprovision */,
+				B5FFC0F429DABA9300FBDADF /* README.rtf */,
+			);
+			path = VFA_Test_Watch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,12 +458,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FFC0F829DABA9300FBDADF /* VFA_Test_WatchkitApp.mobileprovision in Resources */,
 				B5FFC0E629DAB2FA00FBDADF /* input_score_detail_on_bg.png in Resources */,
 				B5FFC0E129DAB2EB00FBDADF /* input_score_detail_on.png in Resources */,
 				B5FFC0E729DAB2FD00FBDADF /* input_score_detail_off.png in Resources */,
+				B5FFC0EE29DAB90E00FBDADF /* TopInterface.storyboard in Resources */,
 				B5FFC0DD29DAB2E100FBDADF /* input_score_plus.png in Resources */,
 				7327FCCF22886AC80050D1A0 /* Assets.xcassets in Resources */,
+				B5FFC0EC29DAB90E00FBDADF /* InputScoreInterface.storyboard in Resources */,
+				B5FFC0F529DABA9300FBDADF /* Certificates_Dev.p12 in Resources */,
 				B5FFC0E329DAB2F200FBDADF /* input_score_minus.png in Resources */,
+				B5FFC0F929DABA9300FBDADF /* README.rtf in Resources */,
 				B5FFC0E429DAB2F500FBDADF /* input_score_plus_minus_bg.png in Resources */,
 				B5FFC0E529DAB2F800FBDADF /* input_score_next_hole.png in Resources */,
 				B5FFC0E229DAB2F000FBDADF /* input_score_previous_hole.png in Resources */,
@@ -431,7 +476,10 @@
 				B5F049A029DA93960000C479 /* Storyboard.storyboard in Resources */,
 				B5FFC0DF29DAB2E600FBDADF /* input_score_detail_minus_plus_bg.png in Resources */,
 				B5FFC0E029DAB2E800FBDADF /* input_score_detail_input_icon.png in Resources */,
+				B5FFC0ED29DAB90E00FBDADF /* InputScoreListHoleInterface.storyboard in Resources */,
 				B5FFC0DE29DAB2E300FBDADF /* input_score_detail_off_bg.png in Resources */,
+				B5FFC0F629DABA9300FBDADF /* VFA_Test.mobileprovision in Resources */,
+				B5FFC0F729DABA9300FBDADF /* VFA_Test_WatchkitApp_WatchkitExtension.mobileprovision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,15 +682,17 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 52LV6A2Q7J;
 				INFOPLIST_FILE = "CoinFlip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "VFA Test WatchkitApp WatchkitExtension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -657,15 +707,17 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 52LV6A2Q7J;
 				INFOPLIST_FILE = "CoinFlip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "VFA Test WatchkitApp WatchkitExtension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -681,12 +733,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 52LV6A2Q7J;
 				IBSC_MODULE = CoinFlip_WatchKit_Extension;
 				INFOPLIST_FILE = "CoinFlip WatchKit App/Info.plist";
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "VFA Test WatchkitApp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -702,12 +756,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 52LV6A2Q7J;
 				IBSC_MODULE = CoinFlip_WatchKit_Extension;
 				INFOPLIST_FILE = "CoinFlip WatchKit App/Info.plist";
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "VFA Test WatchkitApp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -722,14 +778,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52LV6A2Q7J;
 				INFOPLIST_FILE = CoinFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "VFA Test";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -741,14 +799,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52LV6A2Q7J;
 				INFOPLIST_FILE = CoinFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShapingEdge.CoinFlip;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "VFA Test";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

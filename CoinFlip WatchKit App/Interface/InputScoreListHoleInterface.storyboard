@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ShinMGoPro-DeBold.otf">
+            <string>ShinMGoPro-DeBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--InputScoreListHoleInterface-->
+        <scene sceneID="fRD-1l-P1O">
+            <objects>
+                <controller identifier="InputScoreListHoleInterface" spacing="8" id="IGi-cB-aGO" customClass="InputScoreListHoleInterfaceController" customModule="CoinFlip_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" numberOfLines="0" id="mfO-0R-ZjA">
+                            <string key="text">神奈川カントリークラブ /
+Kanagawa CountryClub
+西ー東コース</string>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                            <variation key="device=watch38mm">
+                                <fontDescription key="font" type="system" weight="medium" pointSize="10"/>
+                            </variation>
+                        </label>
+                        <table alignment="left" id="bRS-uW-2Mj">
+                            <items>
+                                <tableRow identifier="HoleListTableRow" id="o3c-79-ZEC" customClass="HoleListTableRowController" customModule="YourGolfWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" spacing="5" id="TKq-Gv-lsv">
+                                        <items>
+                                            <label width="0.34999999999999998" alignment="left" verticalAlignment="center" text="18H" textAlignment="right" id="Pwz-hw-ee8">
+                                                <color key="textColor" red="0.058823529409999999" green="0.73725490199999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="21"/>
+                                                <variation key="device=watch38mm">
+                                                    <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="17"/>
+                                                </variation>
+                                            </label>
+                                            <label width="0.25" alignment="left" verticalAlignment="center" text="Par3" id="uyi-lz-gt0">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                <variation key="device=watch38mm">
+                                                    <fontDescription key="font" type="system" pointSize="8"/>
+                                                </variation>
+                                            </label>
+                                            <group width="0.40000000000000002" alignment="right" verticalAlignment="center" spacing="6" id="f8W-Ba-qgm">
+                                                <items>
+                                                    <label alignment="right" verticalAlignment="center" text="10" id="4w0-nl-fGn">
+                                                        <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="22"/>
+                                                        <variation key="device=watch38mm">
+                                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="18"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="10" textAlignment="right" id="kAk-92-b9d">
+                                                        <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="13"/>
+                                                        <variation key="device=watch38mm">
+                                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="9"/>
+                                                        </variation>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="holeNumberLabel" destination="Pwz-hw-ee8" id="2J4-3P-zDZ"/>
+                                        <outlet property="parLabel" destination="uyi-lz-gt0" id="Pnd-b2-r19"/>
+                                        <outlet property="pushLabel" destination="kAk-92-b9d" id="hYB-tt-bWq"/>
+                                        <outlet property="strokeLabel" destination="4w0-nl-fGn" id="AvI-Th-AfZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="zzi-FZ-5Pg">
+                            <items>
+                                <label alignment="center" text="TOTAL" id="56h-L4-Nkx">
+                                    <color key="textColor" red="0.058823529409999999" green="0.73725490199999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="26"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" weight="semibold" pointSize="22"/>
+                                    </variation>
+                                </label>
+                                <group alignment="center" id="dfi-Ix-KQL">
+                                    <items>
+                                        <group alignment="left" layout="vertical" id="fQP-RT-UBo">
+                                            <items>
+                                                <group alignment="right" layout="vertical" id="jkh-JN-FRb">
+                                                    <items>
+                                                        <label alignment="center" text="100" id="kIb-my-tnm">
+                                                            <fontDescription key="font" type="system" weight="semibold" pointSize="45"/>
+                                                            <variation key="device=watch38mm">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="38"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label alignment="center" text="STROKE" id="56j-Gd-PJI">
+                                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="10"/>
+                                                            <variation key="device=watch38mm">
+                                                                <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="6"/>
+                                                            </variation>
+                                                        </label>
+                                                    </items>
+                                                    <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group alignment="right" verticalAlignment="bottom" layout="vertical" id="GlY-Wj-QuQ">
+                                            <items>
+                                                <group alignment="left" verticalAlignment="bottom" layout="vertical" spacing="8" id="z1h-2H-Wjp">
+                                                    <items>
+                                                        <label alignment="center" verticalAlignment="bottom" text="100" id="yiq-lu-FsY">
+                                                            <fontDescription key="font" type="system" weight="semibold" pointSize="30"/>
+                                                            <variation key="device=watch38mm">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="23"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label alignment="center" verticalAlignment="bottom" text="PUTT" id="84R-pD-TIi">
+                                                            <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="10"/>
+                                                            <variation key="device=watch38mm">
+                                                                <fontDescription key="font" name="ShinMGoPro-DeBold" family="A-OTF Shin Maru Go Pro" pointSize="6"/>
+                                                            </variation>
+                                                        </label>
+                                                    </items>
+                                                    <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="20" bottom="20"/>
+                        </group>
+                        <button width="1" alignment="left" title="一時保存" id="f23-IT-buE">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.46274509803921571" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveButtonPressed" destination="IGi-cB-aGO" id="TKb-zH-x57"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="保存して終了" id="RPZ-g7-bPw">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.031372549020000001" green="0.36862745099999999" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="uploadButtonPressed" destination="IGi-cB-aGO" id="aor-wU-tFJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="clubNameLabel" destination="mfO-0R-ZjA" id="Rfh-gz-k4k"/>
+                        <outlet property="holeListTableView" destination="bRS-uW-2Mj" id="7ZS-1P-OE5"/>
+                        <outlet property="saveButton" destination="f23-IT-buE" id="VKI-SC-CGH"/>
+                        <outlet property="totalPuttLabel" destination="yiq-lu-FsY" id="kww-0c-f0T"/>
+                        <outlet property="totalStrokeLabel" destination="kIb-my-tnm" id="aqQ-DU-4bj"/>
+                        <outlet property="uploadButton" destination="RPZ-g7-bPw" id="pQJ-6c-iT3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="62" y="-25.5"/>
+        </scene>
+    </scenes>
+</document>
